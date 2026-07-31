@@ -1,5 +1,10 @@
+import { useParams } from 'react-router-dom'
+import React, { useEffect } from 'react'
+
 function Users() {
-    return <h1>Users</h1>
+    const { username } = useParams()
+    
+    return <h1>{username}</h1>
 }
 
 export default Users;
